@@ -38,11 +38,19 @@ Setup Instructions
 4. Configure AWS credentials 
 5. Run flask app.py
 
-Usage Guide
+Usage Guide  
 ===========
-To use SatyaVichar:
 
-1. Navigate to the web interface
-2. Paste or type any textual content in the input box 
+To use the SatyaVichar web interface:
+
+1. Navigate to the web interface  
+2. Paste or type any textual content in the input box
 3. Click 'Check for Facts'
 4. Review the detailed accuracy analysis provided
+
+To use the SatyaVichar browser extension:
+
+1. Install the extension from the Chrome Web Store
+2. When browsing any webpage, click the extension icon   
+3. The extension will analyze the page content
+4. Verification analysis results will be shown on the webpage
