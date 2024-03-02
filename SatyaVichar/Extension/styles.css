@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,300&display=swap');
+
+body{
+    font-family:"Roboto";
+}
+.bg-container {
+    width: 400px;
+    height: 550px;
+    /* background-color: #f3e4f1; */
+    background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px; /* Add border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a subtle elevation effect */
+    padding:20px;
+    
+}
+.headdere{
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.useprompt{
+    border:solid black 1px;
+    width:95%;
+    height:200px;
+    text-align:center;
+    border-radius:10px;
+}
+
+
+.usepic{
+    width:100%; 
+    text-align:center;
+    border-radius:10px;
+    color:transparent;
+}
+
+
+.button-74 {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-74:hover {
+    background-color: #fff;
+  }
+  
+  .button-74:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+  
+  @media (min-width: 768px) {
+    .button-74 {
+      min-width: 120px;
+      padding: 0 25px;
+    }
+  }
+
+  .logo{
+    height:200px;
+    margin-bottom:20px;
+    border-radius:70px;
+
+  }
+
+  .photo{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+    margin-left:10px;
+  }
+
+  .droppy{
+    width:200px;
+  }

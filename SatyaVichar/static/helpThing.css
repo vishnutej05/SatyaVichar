@@ -1,0 +1,58 @@
+.help-main-head {
+  color: black;
+  margin-left: 30px;
+  font-size: 40px;
+  text-decoration: underline;
+  margin-top: 50px;
+}
+
+.help-main-par {
+  color: black;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.help-top-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: black;
+  margin-top: 180px;
+  margin: 60px;
+}
+
+.helpQeury {
+  /* margin-top: 60px; */
+  color: black;
+  font-size: xx-large;
+}
+
+hr {
+  color: black;
+  background-color: black;
+  border-color: black;
+  width: 450px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid #c2cfca;
+  height: 60px;
+  width: 250px;
+  border-radius: 20px;
+  font-size: xx-large;
+  margin-left: 30px;
+}
+
+button:hover {
+  background-color: #a1b6ae;
+  color: white;
+}
+
+/* .head-help-div {
+  margin-top: 150px;
+} */

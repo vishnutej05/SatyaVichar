@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>AyurEase beta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="bg-container">
+        <nav class="fixed-top main-nav">
+            <div class="div-top-thing">
+                <a class="navbar-brand anch-thing" href="index.html">
+                    <img src="{{ url_for('static', filename='SVlogo.png') }}" alt=""
+                        class="d-inline-block align-text-top img-thing">
+                    <p class="top-para-thing">SatyaVichar</p>
+                </a>
+            </div>
+            <div class="li-items-div">
+                <a href="#" id="style-3">Home</a>
+                <a href="#" id="style-3">Features</a>
+                <a href="#" id="style-3">About</a>
+                <a href="#" id="style-3">History</a>
+            </div>
+        </nav>
+
+
+        <div class="inko-kotha-div">
+            <div class="kotha-div align-self-center">
+                <div>
+                    <img class="abhijitImage"
+                        src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202312/ezgif-sixteen_nine_182.jpg?size=948:533" />
+                    <p class="kotha-para">Adani Group said on Friday that AMG Media Networks Limited (AMNL), a wholly
+                        owned subsidiary of the company, has acquired a 50.50 per cent stake in news agency IANS India
+                        Private Limited.
+
+                        This majority stake constitutes Equity Shares (Category I shares - with voting rights) and
+                        Equity Shares (Category II shares - without voting rights) each of IANS India Private Limited
+                        (IANS) in accordance with Share Purchase Agreement dated December 15, 2023, the company
+                        announced through an exchange filing..</p>
+                </div>
+            </div>
+            <div class="main-div">
+
+                <div id="result-container">
+                    <div id="result"></div>
+                </div>
+                <div class="inner-div">
+                    <i class="fa-regular fa-image first-one" id="file-icon"></i>
+                    <input type="file" id="file-input" style="display:none;" />
+                    <i class="fa-solid fa-note-sticky"></i>
+                    <i class="fa-solid fa-plus"></i>
+                    <div class="input-div">
+                        <input id="prompt" class="in-thing" type="search" placeholder="Enter your news..." />
+                        <i class="smile-thing fa-regular fa-face-smile"></i>
+                    </div>
+                    <div id="inps">
+                        <button class="final-btns" onclick="genTxt()">Check</button>
+                        <!-- <button class="final-btns" onclick="genData()">Generate Data</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='app.js')}}"></script>
+</body>
+
+</html>

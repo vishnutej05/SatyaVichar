@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='helpThing.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesEX.css') }}">
+
+    <script src="https://kit.fontawesome.com/c2f679e36d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=HK+Grotesk:wght@400;500&display=swap">
+
+</head>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <div>
+        <div class="bg-container">
+            <nav class="navbar navbar-expand-lg topsec fixed-top p-2">
+                <div class="container-fluid">
+                    <a class="navbar-brand nav-texts" href="/"><img src="{{ url_for('static', filename='SVlogo.png') }}"
+                            alt="Logo" class="LOGO"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link nav-texts me-3" href="help.html">Help Us Improve</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="help-top-sec">
+                <div class="d-flex flex-row head-help-div">
+                    <h1 class='help-main-head'>Adani Group acquires majority stake in news agency IANS</h1>
+                </div>
+                <p class="help-main-par">Adani Group said on Friday that AMG Media Networks Limited (AMNL), a wholly
+                    owned subsidiary of the company, has acquired a 50.50 per cent stake in news agency IANS India
+                    Private Limited. This majority stake constitutes Equity Shares (Category I shares - with voting
+                    rights) and Equity Shares (Category II shares - without voting rights) each of IANS India Private
+                    Limited (IANS) in accordance with Share Purchase Agreement dated December 15, 2023, the company
+                    announced through an exchange filing.</p>
+
+                <hr />
+
+                <div>
+
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            margin: 0;
+                            padding: 0;
+                            background: url('background-image.jpg');
+                            /* Replace with your background image */
+                            background-size: cover;
+                            height: 100vh;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        #overlay {
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, 0.7);
+                            display: none;
+                            align-items: center;
+                            justify-content: center;
+                            backdrop-filter: blur(5px);
+                        }
+
+                        #popup {
+                            background: #fff;
+                            padding: 20px;
+                            border-radius: 10px;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                            text-align: center;
+                        }
+
+                        #closeBtn {
+                            cursor: pointer;
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                            font-size: 90px;
+                        }
+
+                        h2 {
+                            color: black
+                        }
+                    </style>
+                    </head>
+
+                    <body>
+
+                        <div id="overlay">
+                            <div id="popup">
+                                <span id="closeBtn" onclick="closePopup()">&times;</span>
+                                <h2>Your response is saved, Thank You</h2>
+                            </div>
+                        </div>
+
+
+                        <p class="helpQeury">What do you think about the above news</p>
+                        <button onclick="openPopup()">Real</button>
+                        <button onclick="openPopup()">Fake</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <script>
+        // Function to check if an element is in the viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Function to handle showing the text when the video section is scrolled into view
+        function handleScroll() {
+            const textOverlay = document.querySelector('.text-overlay');
+            if (isInViewport(textOverlay)) {
+                textOverlay.style.opacity = 1; // Show the text
+            }
+        }
+
+        // Event listener for scrolling
+        window.addEventListener('scroll', handleScroll);
+
+        // Initial check on page load
+        document.addEventListener('DOMContentLoaded', handleScroll);
+
+
+        function openPopup() {
+            document.getElementById('overlay').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+    </script>
+
+</body>
+
+</html>
