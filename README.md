@@ -11,6 +11,7 @@ The project was built by our team as part of the CMRTC Hackathon in Hyderabad wh
 
 Team Members
 ============
+- Vishnu Tej
 - Abhijit 
 - Bhargav Krishna Chanamolu
 - Aditya Gupta
